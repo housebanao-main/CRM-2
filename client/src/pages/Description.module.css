@@ -1,0 +1,56 @@
+/* Global styling to prevent horizontal scrolling */
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Disable horizontal scrolling */
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    height: 100vh;
+}
+
+/* Main container for the Description page */
+.container {
+    max-width: 1200px; /* Limit the width of the page */
+    margin: 0 auto; /* Center the content */
+    padding: 0; /* Remove padding from the container */
+    overflow-x: hidden; /* Ensure no horizontal scroll */
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Ensure the container takes the full height of the page */
+    position: relative;
+}
+
+/* Header specific styling with no left or right margin */
+.headerContainer {
+    width: 100%; /* Ensure the header spans the full width */
+    background-color: #f8f9fa; /* Header background color */
+    padding: 20px 0; /* Padding top and bottom */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0; /* Make the header sticky at the top */
+    z-index: 10; /* Ensure the header stays on top */
+}
+
+/* Content wrapper for components after the header */
+.contentWrapper {
+    margin: 0; /* Remove margin */
+    padding: 10px; /* Equal padding around the content */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    flex-grow: 1;
+}
+
+/* Add margins for all components inside the contentWrapper */
+.contentWrapper > * {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* Optional: Responsive design to ensure no overflow on smaller screens */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 5px; /* Reduce side padding for smaller screens */
+    }
+}
