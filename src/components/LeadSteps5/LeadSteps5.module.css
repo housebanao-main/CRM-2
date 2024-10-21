@@ -1,0 +1,458 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    margin: 10px;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.leftColumn {
+    display: flex; 
+    flex-direction: column;
+    flex-basis: 65%;
+    gap: 20px;
+}
+
+.rightColumn {
+    flex-direction: column;
+    flex-basis: 35%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.activitySection, .keyDetailsSection, .additionalInfoSection {
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}.activitySection {
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    display: flex;
+    justify-content: flex-start; /* Aligns the header to the left */
+}
+
+.activityTitle {
+    font-size: 24px;
+    color: #767676;
+    font-weight: 200;
+    margin-left: 20px;
+    margin-top: 10px; /* Left alignment */
+}
+
+.separator {
+    height: 1px;
+    background-color: #dcdcdc; /* Line under the Activity title */
+    border: none;
+    margin: 10px 0; /* Adds space around the line */
+}
+
+.tableWrapper {
+    width: 100%;
+    border: 1px solid #9E9E9E; /* Adds a solid border around the "table" */
+    padding: 10px;
+    margin-top: 15px;
+}
+
+.tableHeader {
+    display: flex;
+    background-color: #f5f5f5; /* Slight background color for the header */
+    padding: 10px;
+    font-weight: bold;
+    border-bottom: 1px solid #9E9E9E;
+}
+
+.tableBody {
+    display: flex;
+    flex-direction: column;
+}
+
+.tableRow {
+    display: flex;
+    padding: 10px;
+    border-bottom: 1px solid #ddd; /* Light border between rows */
+}
+
+.tableColumn {
+    flex: 1;
+    padding: 5px;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    align-items: center;
+}
+
+.inputField {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+}
+
+.addButton {
+    padding: 8px 16px;
+    background-color: #009688;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.addButton:hover {
+    background-color: #00796b; /* Darken button color on hover */
+}
+
+.keyDetailsSection {
+    height: 400px; /* Adjusted height */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align the content at the top */
+    margin-top: 0; /* Ensure no margin at the top */
+    padding-top: 0; /* Ensure no padding at the top */
+}
+
+.detailsHeader {
+    font-size: 19px;
+    font-weight: normal;
+    color: #767676;
+    margin-left: 20px;
+    margin-top: 40px; /* Remove top margin */
+    text-transform: uppercase;
+}
+
+.detailsGrid {
+    display: grid;
+    margin-top: 0; /* Remove any extra top margin */
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    height: 50px; /* Keep height for the grid */
+}
+
+.detailItem {
+    padding-left: 10px;
+    padding-right: 20px;
+    background-color: transparent; /* Keep background transparent */
+    height: 50px; /* Maintain height for the grid items */
+}
+
+/* Remove paragraph content to avoid any unnecessary space */
+.detailItem:first-child p, .detailItem:last-child p {
+    display: none; /* Hide the content to keep it empty */
+}
+
+
+.taskSection {
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    width: 95%;
+}
+
+.taskHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.taskTitle {
+    font-size: 20px;
+    color: black;
+    margin: 0;
+    font-weight: normal;
+}
+
+.nextStepsHeader, .pastActivitiesHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.nextStepsTitle, .pastActivitiesTitle {
+    font-size: 16px;
+    font-weight: normal;
+    color: black;
+}
+
+.lineRight {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #dcdcdc;
+    margin-left: 10px;
+}
+
+.markAsDone {
+    font-size: 14px;
+    color: red;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.taskItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.taskLeft {
+    flex-basis: 70%;
+}
+
+.taskRight {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-basis: 30%;
+}
+
+.taskMainHeading {
+    font-size: 16px;
+    font-weight: normal;
+    color: #1F5E6C;
+    margin: 0;
+}
+
+.taskSubHeading {
+    font-size: 14px;
+    color: #000000;
+    margin: 3px 0;
+}
+
+.taskSubHeadingOverdue {
+    font-size: 14px;
+    color: #BA0000;
+    margin: 3px 0;
+}
+
+.taskSubHeadingUpcoming {
+    font-size: 14px;
+    color: #1F5E6C;
+    margin: 3px 0;
+}
+
+.taskDate {
+    font-size: 14px;
+    color: #333;
+    margin-right: 10px;
+}
+
+.taskCheckbox {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.timelineSection {
+    padding: 20px;
+    background-color: white;
+    width: 86%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.timelineTitle {
+    font-size: 24px;
+    color: #767676;
+    margin-bottom: 20px;
+    font-weight: 200;
+    margin-left: 25px;
+    height: auto;
+}
+
+.iconContainer {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    margin-bottom: -10px;
+}
+
+.chevronIcon {
+    font-size: 16px;
+    color: #333;
+    margin-right: 8px;
+    margin-top: 10px;
+}
+
+.stepIcon {
+    width: 24px;
+    height: 24px;
+    margin-right: 14px;
+    margin-top: 8px;
+}
+
+.line {
+    width: 2px;
+    height: 60px;
+    background-color: #45BF72;
+    position: absolute;
+    border-radius: 2px;
+    top: 35px;
+    left: 30px;
+}
+
+.stepDetails {
+    margin-left: 20px;
+    flex-grow: 1;
+}
+
+.stepHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stepTitle {
+    font-size: 16px;
+    font-weight: 200;
+    color: #1F5E6C;
+    margin-bottom: 4px;
+    margin-top: 0;
+}
+
+.stepTimestamp {
+    font-size: 14px;
+    color: #767676;
+    margin-left: 10px;
+}
+
+.personInfo {
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+}
+
+.personImage {
+    width: 40px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.personName {
+    font-size: 16px;
+    color: #333;
+}
+
+.timelineStepContainer {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 5px;
+}
+
+.show {
+    font-size: small;
+    color: #1F5E6C;
+    margin-left: 22px;
+}.additionalInfoSection {
+    padding: 20px;
+    height: auto;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    font-size: medium;
+    font-weight: normal;
+
+  }
+  
+  .additionalInfoTitle {
+    cursor: pointer;
+    color: #767676;
+    margin-top: 2px;
+    font-size: 24px;
+    font-weight: 100;
+    margin-left: 20px;
+  }
+  
+  .editOption {
+    font-size: 16px;
+    cursor: pointer;
+    color: #1F5E6C;
+    font-size: 20px;
+    margin-top: 2px;
+    font-weight: 100;
+  }
+  
+  .separator {
+    margin: 0 0;
+    margin-top: 5px;
+  }
+  
+  .infoColumns {
+    display: flex;
+    gap: 50px;
+    padding-right: 60px;
+    min-width: 100px;
+    justify-content: space-between;
+  }
+  
+  .infoColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    min-width: 100px;
+  }
+  
+  .infoColumn:first-child {
+    margin-left: 20px; /* Left margin for the first column */
+  }
+  
+  .infoColumn:last-child {
+    margin-right: 30px; 
+    min-width: 100px;/* Right margin for the second column */
+  }
+  
+  .infoItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 4px;
+    min-width: 100px;
+    min-height: 100px; /* Ensures uniform height for all items */
+  }
+  
+  .infoItem h4 {
+  margin-bottom: 5px;
+  font-weight: 200;
+  font-size: 16px;
+  min-width: 100px;
+  color: #767676;
+
+  min-height: 25px; /* Ensures consistent height for all headings */
+}
+
+  
+  .infoItem p {
+    margin: 0;
+    padding: 0;
+    font-size: 17px;
+    font-weight: 200;
+    min-width: 100px;
+    line-height: 1.5; /* Adds consistent spacing between paragraphs */
+  }
+  
+
+.headingDetailItem {
+    width: 150px;
+    margin-right: 5px;
+}
+
+.valueDetailItem {
+    color: #1F5E6C;
+    font-weight: normal;
+}

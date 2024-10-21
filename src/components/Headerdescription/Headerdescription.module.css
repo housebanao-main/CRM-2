@@ -1,0 +1,53 @@
+/* Header styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 10px;
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom: 2px; 
+}
+
+.logo {
+    height: 50px;
+    max-width: 100px;
+    margin-left: 30px;
+}
+
+.button {
+    background-color: #f8f9fa;
+    color: #1F5E6C;
+    border: 1px solid #9E9E9E;
+    padding: 10px 45px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+.back {
+    display: flex;
+    align-items: center;
+    margin-top: 0px;
+    margin-left: 30px;
+    padding: 6px 10px;
+}
+
+.arrowIcon {
+    font-size: 15px;
+    margin-left: 25px; 
+    margin-right: 5px; 
+}
+
+.heading {
+    font-size: 17px;
+    color: #767676;
+    margin-left: 27px; 
+}

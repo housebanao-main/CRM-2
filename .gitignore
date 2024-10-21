@@ -1,5 +1,6 @@
 
 # Dependencies
+<<<<<<< HEAD
 /node_modules
 
 # Production
@@ -36,3 +37,6 @@ Thumbs.db
 client/node_modules/.cache/
 client/node_modules/.cache/default-development/*.pack
 client/client.zip
+=======
+/node_modules
+>>>>>>> c063bbe (Team & siet inspection frontend done)

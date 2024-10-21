@@ -1,0 +1,40 @@
+.detailsWrapper {
+    margin: 10px; /* Set margin for left and right */
+    display: flex;
+    justify-content: center; /* Center the box */
+    margin-top: 0;
+  }
+  
+  .detailsContainer {
+    width: 100%; /* Full width to align with Steps */
+    height: 60px; /* Reduced height */
+    display: flex;
+    justify-content: flex-start; /* Equal spacing */
+    align-items: center;
+border-radius: 8px;
+    background-color: white;
+    font-size: small;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px; /* Adjusted padding */
+    gap: 4px; /* Gap between items */
+    cursor: pointer;
+  }
+  
+  /* Individual list item */
+  .detailItem {
+    margin-left: 40px;
+    color: #767676;
+    width: 150px; /* Fixed width for items */
+    height: 36px; /* Fixed height for items */
+    font-family: 'Poppins', sans-serif; /* Font family */
+    font-size: 20px; /* Font size */
+    font-weight: 200; /* Font weight */
+    line-height: 36px; /* Line height */
+    text-align: center;
+    text-decoration: none; /* Remove underline */
+  }
+  
+  .detailItem:hover {
+    text-decoration: underline; /* Add underline on hover */
+  }
+  

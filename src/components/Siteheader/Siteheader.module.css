@@ -1,0 +1,140 @@
+:root {
+  --primary-color: #1F5E6C;
+}
+
+.siteWrapper {
+  margin-top: 30px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.leftInfo {
+  display: flex;
+  align-items: center;
+}
+
+.infoRow {
+  display: flex;
+  gap: 30px;
+}
+
+.infoBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  padding: 10px;
+}
+
+.infoBlock h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 36px;
+  color: #767676;
+}
+
+.infoBlock p {
+  margin: 0;
+  font-size: 19px;
+  font-weight: 200;
+  color: var(--primary-color);
+}
+
+.rightButtonContainer {
+  display: flex;
+  align-items: center;
+}
+
+.button {
+  padding: 12px 24px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #17494f;
+}
+
+/* Centered Form Styling */
+.formOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Background dimming effect */
+}
+
+.formContainer {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 350px; /* Reduced form width */
+  text-align: center;
+}
+
+.heading {
+  font-size: 22px;
+  margin-bottom: 20px;
+  font-weight: 200;
+}
+
+.inputBlock {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.inputBlock label {
+  text-align: left;
+  
+  font-size: 14px;
+  color: #333;
+  margin-left: 4px;
+}
+
+.inputField {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  width: 90%; /* Reduce input field width */
+  margin: 0 auto; /* Center input field */
+}
+
+.nextButton {
+  width: 20%; /* Increase button width slightly more than input */
+  padding: 12px; /* Increase padding */
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px; /* Slightly larger font */
+  margin-top: 15px;
+}
+
+.nextButton:hover {
+  background-color: #17494f;
+}

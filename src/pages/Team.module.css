@@ -1,0 +1,25 @@
+.container {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+  
+  .headerContainer {
+    margin-bottom: 20px; /* Add space below the header */
+  }
+  
+  .detailsContainer {
+    margin-bottom: 20px; /* Add space below the details */
+  }
+  
+  .teamHeader {
+    margin-bottom: 20px; /* Add space below the team header */
+  }
+  
+  .teamTable {
+    margin-top: 0; /* Align table right below the header */
+    width: 100%;
+    overflow-x: auto;
+  }
+  

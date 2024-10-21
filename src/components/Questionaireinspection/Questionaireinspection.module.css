@@ -1,0 +1,90 @@
+:root {
+    --primary-color: #1F5E6C;
+}
+
+.container {
+    margin: 30px 10px; /* 10px margin on left and right */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: calc(100% - 60px); /* Take full width minus the 10px margin on each side */
+    max-width: none; /* Remove max-width constraint */
+    font-family: 'Poppins', sans-serif;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.questionGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    column-gap: 40px; /* Reduce gap between columns to fit the wider layout */
+    width: 100%; /* Ensure it takes up full available width */
+    background-color: white; /* White background for the box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow */
+    padding: 20px; /* Padding inside the box */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.questionItem {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between question and inputs */
+    padding: 10px 0;
+    font-size: medium;
+    font-weight: 200;
+    color: black;
+}
+
+label {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 100;
+    white-space: nowrap; /* Ensure questions stay on one line */
+}
+
+.inputs {
+    display: flex;
+    gap: 10px; /* Space between UOM and FT dropdowns */
+    width: 100%; /* Make inputs stretch to full available width */
+}
+
+.input {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    flex: 1; /* Make inputs stretch according to available space */
+}
+
+/* Center the Save button */
+.saveButton {
+    padding: 12px 24px;
+    margin-top: 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    display: block;
+    grid-column: span 2; /* Span both columns */
+    justify-self: center; /* Center the button */
+}
+
+.saveButton:hover {
+    background-color: #17494f;
+}
+
+@media (max-width: 768px) {
+    .questionGrid {
+        grid-template-columns: 1fr; /* Switch to 1 column for small screens */
+    }
+
+    .saveButton {
+        grid-column: span 1; /* Span one column in mobile view */
+    }
+}

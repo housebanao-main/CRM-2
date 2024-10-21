@@ -1,0 +1,214 @@
+:root {
+    --primary-color: #1F5E6C;
+  }
+  
+  .teamWrapper {
+    margin-top: 30px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .teamContainer {
+    width: 100%;
+    margin: 4px 0px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    font-size: small;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    position: relative;
+  }
+  
+  .teamInfo {
+    display: flex;
+    gap: 50px;
+  }
+  
+  .infoBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    padding: 10px;
+  }
+  
+  .infoBlock h3 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 200;
+    line-height: 36px;
+    color: #767676;
+  }
+  
+  .infoBlock p {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 200;
+    color: var(--primary-color);
+  }
+  
+  .buttonContainer {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+    gap: 10px;
+    margin-top: -93px;
+  }
+  
+  .button,
+  .button1 {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    color: #767676;
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .buttonIcon,
+  .button1Icon {
+    margin-right: 5px;
+    color: #767676;
+    font-size: 18px;
+  }
+  
+  .button:hover,
+  .button1:hover {
+    background-color: var(--primary-color);
+    color: white;
+  }
+  
+  .button:hover .buttonIcon,
+  .button1:hover .button1Icon {
+    color: white;
+  }
+  .profileStack {
+    display: flex;
+    position: relative;
+    height: 45px;
+    margin-top: 2px; /* Adjusted margin to bring profile pictures just below "People in Team" */
+  }
+  
+  .profilePicture {
+    width: 35px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+    margin-left: -10px; /* Overlapping effect */
+    margin-bottom: 20px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adds smooth hover effect */
+  }
+  
+  .profilePicture:hover {
+    transform: scale(1.1); /* Slightly enlarges the picture on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  
+  .peopleList {
+    position: absolute;
+    top: calc(100% + 10px); 
+    right: 0; 
+    width: 250px; 
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .peopleList ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .peopleList li {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .peopleList li:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .listProfilePicture {
+    width: 30px;  /* Reduced size */
+    height: 30px; /* Reduced size */
+    border-radius: 50%;
+    margin-right: 10px;
+  }.taskForm {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 320px; /* Reduced width */
+    max-width: 90%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+  }
+  
+  .taskForm label {
+    font-size: 14px;
+    color: #767676;
+  }
+  
+  .taskForm input,
+  .taskForm select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .taskForm button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .taskForm button:hover {
+    background-color: #17494f;
+  }
+  
+  .twoColumns {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; /* Adjusted gap */
+  }
+  
+  .twoColumns div {
+    width: 48%; /* Make both fields take up 48% of the available space */
+  }
+  
+  .fullWidth {
+    width: 100%;
+  }
+  
+  

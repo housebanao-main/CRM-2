@@ -1,0 +1,88 @@
+.taskCell {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; /* Ensure popups are relative to the cell */
+  }
+  
+  .radioButton {
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .taskName {
+    flex-grow: 1;
+    margin-left: 10px;
+  }
+  
+  .iconEllipsis {
+    margin-left: auto;
+    color: #767676;
+    cursor: pointer;
+  }
+  
+  /* Popup for status update */
+  .statusPopup {
+    position: absolute;
+    left: 40px;
+    top: 30px;
+    background-color: white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 10px;
+    z-index: 10;
+  }
+  
+  .statusPopup ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .statusPopup ul li {
+    padding: 8px;
+    cursor: pointer;
+  }
+  
+  .statusPopup ul li:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Ellipsis Options */
+  .ellipsisMenu {
+    position: absolute;
+    right: 0;
+    top: 30px;
+    background-color: white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 10px;
+    z-index: 10;
+  }
+  
+  .ellipsisMenu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .ellipsisMenu ul li {
+    padding: 8px;
+    cursor: pointer;
+  }
+  
+  .ellipsisMenu ul li:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .renameInput {
+    flex-grow: 1;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .statusCell {
+    position: relative;
+  }
+  
